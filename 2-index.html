@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Grid Layout</title>
+  <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>My blog</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <article>
-        <main>
-            <header>
-                <h2> understanding Semantic Html</h2>
-                <p> Published on <time datetime=”2024-09-10”> September 10</p>
-                    <section>
-                        <h3>introduction</h3>
-                        <p>Semantic HTML helps improve the accessibility and SEO of your website. In this post, we’ll explore its benefits and how to implement it.</p>
+<body class="p-4">
+  <header>
+    <h1 class="text-2xl font-bold mb-4">Complex Grid Layout with Nested Grids</h1>
+  </header>
 
-                    </section>
-                    <section>
-                        <h3>Main contact</h3>
-                        <p>### Using elements like 
-                            <code>&lt;article&gt;</code> 
-                            <code>&lt;section&gt;</code>
-                            <code>&lt;header&gt;</code></p>
-                    </section>
-            </header>
+  <main class="grid grid-cols-2 gap-4">
+    <!-- Nested Grid 1 -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200">
+      <div class="bg-blue-400 p-2">Nested 1</div>
+      <div class="bg-blue-500 p-2">Nested 2</div>
+    </div>
 
-        </main>
-    </article>
-    <figure >
-        <img src="" alt="">
-    </figure>
-    <figcaption>An illustration of semantic HTML elements</figcaption>
-    <section>
-        <h3>conclusion</h3>
-        <p>By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate.</p>
-    </section>
-    <footer>
-        <p>Published on 2024-09-11</p>
-    </footer>
+    <!-- Nested Grid 2 -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-red-200">
+      <div class="bg-red-400 p-2">Nested 3</div>
+      <div class="bg-red-500 p-2">Nested 4</div>
+    </div>
+
+    <!-- Normal Cells -->
+    <div class="bg-green-200 p-4">Content 3</div>
+    <div class="bg-yellow-200 p-4">Content 4</div>
+  </main>
 </body>
 </html>

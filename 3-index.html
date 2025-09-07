@@ -1,66 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navigation Bar</title>
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>My blog</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <article>
-        <main>
-            <header>
-                <h2> understanding Semantic Html</h2>
-                <p> Published on <time datetime=”2024-09-10”> September 10</p>
-                    <section>
-                        <h3>introduction</h3>
-                        <p>Semantic HTML helps improve the accessibility and SEO of your website. In this post, we’ll explore its benefits and how to implement it.</p>
+<body class="p-4">
+  <header class="mb-4">
+    <h1 class="text-3xl font-bold">Flexbox Navigation Bar</h1>
+  </header>
 
-                    </section>
-                    <section>
-                        <h3>Main contact</h3>
-                        <p>### Using elements like 
-                            <code>&lt;article&gt;</code> 
-                            <code>&lt;section&gt;</code>
-                            <code>&lt;header&gt;</code></p>
-                    </section>
-            </header>
-            <section>
-                <form action="#" method="post" aria-labelledby="form-title" role="form">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" aria-required="true" title="Enter your name" placeholder="Your name">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" title="Enter your email address" placeholder="Your email address" aria-required="true">
-                    </div>
-                    <div>
-                        <button type="submit" title="Submit the form">Submit</button>
-                    </div>
-                </form>
-            </section>
-        </main>
-    </article>
-    <figure >
-        <img src="" alt="">
-    </figure>
-    <figcaption>An illustration of semantic HTML elements</figcaption>
-    <section>
-        <h3>conclusion</h3>
-        <p>By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate.</p>
-    </section>
-    <footer>
-        <p>Published on 2024-09-11</p>
-    </footer>
+  <nav class="flex space-x-5 justify-center bg-gray-300 text-white p-4">
+    <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">Home</a>
+    <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">About</a>
+    <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">Services</a>
+    <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">Contact</a>
+  </nav>
 </body>
 </html>
