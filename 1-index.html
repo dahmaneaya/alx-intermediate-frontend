@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <title>Basic CSS Grid Layout</title>
+    <title>Tailwind CSS Project</title>
+    <link href="./src/output.css" rel="stylesheet">
 </head>
-<body >
-    <header>
-        <h1>Basic CSS Grid Layout</h1>
-    </header>
-
-    <main>
-        <div>Column 1</div>
-        <div>Column 2</div>
-        <div>Column 3</div>
+<body>
+    <main class="grid grid-cols-3 gap-4">
+        <div class="bg-blue-200 p-4">
+            <h2>Column 1</h2>
+            <p>This is the first column with bg-blue-200.</p>
+        </div>
+        <div class="bg-blue-300 p-4">
+            <h2>Column 2</h2>
+            <p>This is the second column with bg-blue-300.</p>
+        </div>
+        <div class="bg-blue-400 p-4">
+            <h2>Column 3</h2>
+            <p>This is the third column with bg-blue-400.</p>
+        </div>
     </main>
-   </body>
+</body>
 </html>
