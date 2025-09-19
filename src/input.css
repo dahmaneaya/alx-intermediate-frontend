@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add custom CSS here if needed */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "node": "^24.8.0",
+    "nodejs": "^0.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
