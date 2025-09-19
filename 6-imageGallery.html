@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout with Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="bg-red-200 p-4 w-1/2">Flexbox Item 1</div>
+            <div class="bg-red-400 p-4 w-1/2">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <!-- Image Gallery Section -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-bold mb-4">Image Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-gray-200 aspect-square flex items-center justify-center">
+                <img src="https://via.placeholder.com/300x300?text=Image+1" alt="Gallery Image 1" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center">
+                <img src="https://via.placeholder.com/300x300?text=Image+2" alt="Gallery Image 2" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center">
+                <img src="https://via.placeholder.com/300x300?text=Image+3" alt="Gallery Image 3" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center">
+                <img src="https://via.placeholder.com/300x300?text=Image+4" alt="Gallery Image 4" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center">
+                <img src="https://via.placeholder.com/300x300?text=Image+5" alt="Gallery Image 5" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="bg-gray-200 aspect-square flex items-center justify-center">
+                <img src="https://via.placeholder.com/300x300?text=Image+6" alt="Gallery Image 6" class="w-full h-full object-cover rounded">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
